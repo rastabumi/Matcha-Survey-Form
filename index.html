@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Matcha Survey</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <hr id="border">
+    <img src="https://static.vecteezy.com/system/resources/previews/020/002/976/non_2x/matcha-green-tea-graphic-clipart-design-free-png.png" alt="logo" id="logo">
+    <h1 id="title">Matcha Survey</h1>
+    <p id="description">Thank you for trying our matcha- Any feedback is appreciated!</p>
+    <hr id="mid-form">
+    <form id="survey-form">
+      <label id="name-label">Name</label><br>
+      <input id="name" type="text" placeholder="Enter a name" required/><br>
+      <label id="email-label">Email</label><br>
+      <input id="email" type="email" placeholder="Enter an email" required/><br>
+      <label id="number-label">Age (Optional)</label><br>
+      <input id="number" type="number" min="13" max="120" placeholder="Age"/>
+      <hr id="mid-form">
+      <label id="dropdown-label">What drink did you purchase?</label><br>
+      <select id="dropdown">
+        <option value="0">Select an option</option>
+        <option value="1">Banana Matcha Latte</option>
+        <option value="2">Strawberry Matcha Latte</option>
+        <option value="3">Iced Matcha Latte</option>
+        <option value="4">Hot Matcha Latte</option>
+      </select><br>
+      
+      <label id="recommend-label">Do you recommend this drink?</label><br>
+      <input type="radio" name="recommend" id="radio1" value="1" checked/><label for="radio1"> Definitely</label><br>
+      <input type="radio" name="recommend" id="radio2" value="2"/><label for="radio2"> Maybe</label><br>
+      <input type="radio" name="recommend" id="radio3" value="3"/><label for="radio3"> Not sure</label><br>
+      <label id="highlights">What do you believe is the highlights of the drink you got?</label><br>
+      <div class="checkboxes">
+        <input type="checkbox" value="0" id="checkbox0"> <label for="checkbox0">Matcha blend</label><br>
+        <input type="checkbox" value="1" id="checkbox1"> <label for="checkbox1">Matcha flavor</label><br>
+        <input type="checkbox" value="2" id="checkbox2"> <label for="checkbox2">Sweetness level</label><br>
+        <input type="checkbox" value="3" id="checkbox3"> <label for="checkbox3">Creaminess/Cream top</label><br>
+        <input type="checkbox" value="4" id="checkbox4"> <label for="checkbox4">Presentation</label><br>
+      </div>
+    <label id="comments-label">Any additional comments?</label><br>
+    <textarea id="comments"></textarea><br>
+    <button id="submit">Submit</button>
+    <hr id="border">
+    </form>
+  </div>
+</body>
+</html>
